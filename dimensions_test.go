@@ -18,4 +18,9 @@ func TestDimension(t *testing.T) {
 	assert.Nil(err)
 	assert.Equal(w, 512)
 	assert.Equal(h, 512)
+
+	w, h, err = Dimension("./testdata/cLena.bmp")
+	assert.Nil(err)
+	assert.Equal(w, 640)
+	assert.Equal(h, 640)
 }

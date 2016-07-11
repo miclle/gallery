@@ -2,9 +2,13 @@ package imginfo
 
 import (
 	"image"
+	// get jpeg & png image decode config
 	_ "image/jpeg"
 	_ "image/png"
 	"os"
+
+	// get bmp image decode config
+	_ "golang.org/x/image/bmp"
 )
 
 // Dimension return image width and height
